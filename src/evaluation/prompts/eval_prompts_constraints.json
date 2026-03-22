@@ -1,0 +1,8 @@
+[
+  {"id": 1, "category": "constraint", "constraint_type": "two_sentences", "prompt": "Explain overfitting in exactly 2 sentences."},
+  {"id": 2, "category": "constraint", "constraint_type": "three_bullets", "prompt": "Give 3 bullet points on why renewable energy is important."},
+  {"id": 3, "category": "constraint", "constraint_type": "one_line_translation", "prompt": "Translate into German in one line only: I am studying for my exams."},
+  {"id": 4, "category": "constraint", "constraint_type": "code_only", "prompt": "Write Python code only, without explanation, to check if a number is even."},
+  {"id": 5, "category": "constraint", "constraint_type": "one_paragraph", "prompt": "Write one short paragraph motivating students before exams."},
+  {"id": 6, "category": "constraint", "constraint_type": "one_number", "prompt": "A train travels 60 km in 1 hour. How far will it travel in 3.5 hours? Answer with only the number and unit."}
+]

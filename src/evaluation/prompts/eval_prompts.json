@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "category": "explanation",
+    "prompt": "Explain overfitting in machine learning in simple terms."
+  },
+  {
+    "id": 2,
+    "category": "summarization",
+    "prompt": "Summarize the importance of renewable energy in 3 sentences."
+  },
+  {
+    "id": 3,
+    "category": "coding",
+    "prompt": "Write Python code to reverse a list without using reverse()."
+  },
+  {
+    "id": 4,
+    "category": "reasoning",
+    "prompt": "A train travels 60 km in 1 hour. How far will it travel in 3.5 hours?"
+  },
+  {
+    "id": 5,
+    "category": "translation",
+    "prompt": "Translate this into German: The weather is beautiful today."
+  },
+  {
+    "id": 6,
+    "category": "creative",
+    "prompt": "Write a short motivational paragraph for students preparing for exams."
+  }
+]
+

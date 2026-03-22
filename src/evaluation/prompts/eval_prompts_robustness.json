@@ -1,0 +1,13 @@
+[
+  {"id": 1, "group": "overfitting", "category": "explanation", "prompt": "Explain overfitting in machine learning in simple terms."},
+  {"id": 2, "group": "overfitting", "category": "explanation", "prompt": "What is overfitting in machine learning? Explain it for a beginner."},
+  {"id": 3, "group": "overfitting", "category": "explanation", "prompt": "Can you describe overfitting very simply?"},
+
+  {"id": 4, "group": "reverse_list", "category": "coding", "prompt": "Write Python code to reverse a list without using reverse()."},
+  {"id": 5, "group": "reverse_list", "category": "coding", "prompt": "How can I reverse a Python list without the built-in reverse method?"},
+  {"id": 6, "group": "reverse_list", "category": "coding", "prompt": "Give a Python function that reverses a list manually."},
+
+  {"id": 7, "group": "renewable_energy", "category": "summarization", "prompt": "Summarize the importance of renewable energy in 3 sentences."},
+  {"id": 8, "group": "renewable_energy", "category": "summarization", "prompt": "Give a short 3-sentence summary of why renewable energy matters."},
+  {"id": 9, "group": "renewable_energy", "category": "summarization", "prompt": "In three sentences, explain why renewable energy is important."}
+]
