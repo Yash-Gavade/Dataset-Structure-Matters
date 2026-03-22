@@ -1,386 +1,174 @@
-# 📊 Dataset Structure Matters
+# 📊 Dataset Structure Matters  
 
-## A Dataset-Centric Structural Analysis and Empirical Study of Instruction-Tuning Corpora
-
----
-
-## 👨‍🎓 Author
-
-**Yash Sakharam Gavade**
-M.Sc. Natural Language Processing
-Universität Trier
+### A Dataset-Centric Structural Analysis and Empirical Study of Instruction-Fine-Tuning Corpora  
 
 ---
 
-## 📌 Abstract
-
-Instruction fine-tuning has become a critical step in aligning large language models (LLMs) with human tasks. While most research focuses on model architectures and training strategies, relatively little attention has been given to the structure of instruction datasets themselves.
-
-This project presents a **dataset-centric study** analyzing how the structural properties of instruction-tuning datasets influence model behavior. Three widely used datasets — **Alpaca**, **Dolly**, and **OpenAssistant (OASST1)** — are analyzed using quantitative metrics such as length distributions, lexical diversity, entropy, redundancy, and semantic clustering.
-
-A controlled experiment is conducted by fine-tuning the **TinyLLaMA** model using **LoRA (Low-Rank Adaptation)** on each dataset. The resulting models are evaluated using manual scoring and constraint-following tests.
-
-The findings demonstrate that dataset construction methodology significantly impacts both dataset structure and model performance. Human-authored datasets produce more balanced and high-quality outputs, while synthetic datasets tend to be more structured but repetitive, and conversational datasets exhibit higher diversity but less consistency.
+### 🎓 Universität Trier  
+**Computational Linguistics and Digital Humanities**  
+Department II  
 
 ---
 
-## 🎯 Motivation
-
-Most existing work in NLP focuses on:
-
-* Model architectures (Transformers, LLMs)
-* Training strategies (pretraining, RLHF)
-* Evaluation benchmarks
-
-However, **datasets are often treated as static inputs**, even though they directly influence:
-
-* Learning patterns
-* Output quality
-* Generalization behavior
-
-👉 This project explores a **data-centric perspective**, asking:
-
-* How do instruction datasets differ structurally?
-* Do these differences affect model behavior?
-* Can dataset quality explain performance differences?
+### 📘 Term Paper  
+**Machine Learning for Natural Language Understanding**  
 
 ---
 
-## 📚 Datasets
-
-### 🔹 Alpaca (Synthetic Dataset)
-
-* Generated using self-instruct method
-* High template consistency
-* Structured and repetitive
-
-### 🔹 Dolly (Human-Authored Dataset)
-
-* Created by annotators
-* Natural language variation
-* Balanced structure
-
-### 🔹 OpenAssistant (Conversational Dataset)
-
-* Multi-turn dialogue data
-* High diversity and variability
-* Longer responses
+### 👤 Author  
+**Yash Gavade**  
+Matr.-Nr.: 1757209  
+📧 s4yagava@uni-trier.de  
 
 ---
 
-## ⚙️ Methodology
-
-The project follows a **two-stage pipeline**:
-
-### Stage 1: Structural Analysis
-
-* Standardization of datasets
-* Metric computation
-* Pattern analysis
-
-### Stage 2: Model Evaluation
-
-* Fine-tuning TinyLLaMA
-* Generating responses
-* Manual + constraint evaluation
+### 🎓 Degree  
+Master of Science  
+Natural Language Processing  
 
 ---
 
-## 🔄 Complete Workflow
-
-![Workflow](images/fig_4_1_workflow.png)
-
----
-
-## 🧹 Data Preprocessing
-
-To ensure fair comparison, all datasets are converted into a unified format:
-
-* Instruction
-* Input (optional)
-* Output
-
-### Steps:
-
-* Remove null / incomplete records
-* Normalize text formatting
-* Standardize schema
-* Convert multi-turn conversations → single-turn pairs
+### 📅 Semester  
+Winter Semester 2025/2026  
 
 ---
 
-## 📊 Structural Analysis
-
-### 1. Length Distribution
-
-Measures instruction and response length.
-
-👉 Insight:
-
-* Synthetic → short & consistent
-* Conversational → long & variable
+### 📌 Submission Date  
+March 23, 2026  
 
 ---
 
-### 2. Lexical Diversity (TTR)
+### 👨‍🏫 Supervisors  
+- **Prof. Dr. Achim Rettinger**  
+- **Raghvi Baloni (PhD Candidate)**  
 
-[
-TTR = \frac{\text{Unique Tokens}}{\text{Total Tokens}}
-]
+---
+##  Abstract
 
-Higher values indicate richer vocabulary.
+This study analyzes how instruction dataset structure affects model behavior. Using Alpaca, Dolly, and OpenAssistant, structural properties are examined and TinyLLaMA models are fine-tuned with LoRA. Results show that dataset design significantly impacts performance, with human-generated data producing better outputs.
+
+## 📌 Overview
+
+Instruction fine-tuning is a key step in aligning large language models (LLMs) with human tasks. While most research focuses on model architectures and training strategies, this project investigates a dataset-centric perspective — analyzing how the structure of instruction datasets influences model behavior.
+
+This study analyzes three widely used datasets:
+- Alpaca (synthetic)
+- Dolly (human-generated)
+- OpenAssistant (conversational)
 
 ---
 
-### 3. Entropy
+## 🎯 Research Questions
 
-[
-H = -\sum p(w)\log p(w)
-]
-
-Measures variability in token usage.
+- RQ1: How do instruction datasets differ in structural properties?
+- RQ2: How are these properties related to dataset composition?
+- RQ3: Do structural differences affect model behavior after fine-tuning?
 
 ---
 
-### 4. Redundancy Analysis
+## 🚀 Key Contributions
 
-* Exact duplicate detection
-* TF-IDF similarity
-* Cosine similarity
-
----
-
-### 5. Semantic Clustering
-
-* K-Means clustering
-* Embedding-based grouping
-
-👉 Shows conceptual coverage of dataset
+- Structural analysis of instruction datasets
+- Metrics: length, lexical diversity (TTR), entropy, redundancy, clustering
+- Fine-tuning TinyLLaMA using LoRA
+- Manual evaluation + constraint-following tests
+- Dataset → Model behavior relationship
 
 ---
 
-## 📈 Key Visualizations
+## 🧪 Methodology
 
-### Instruction Length
+### Data Preprocessing
+- Standardized datasets into instruction → input → output
+- Cleaned and normalized data
+- Converted multi-turn dialogue to single-turn format
 
-![Alpaca](images/hist_instr_len_alpaca.png)
-![Dolly](images/hist_instr_len_dolly.png)
-![OASST1](images/hist_instr_len_oasst1.png)
+### Structural Analysis
+- Length distributions
+- Lexical diversity (TTR)
+- Shannon entropy
+- Redundancy (TF-IDF similarity)
+- Clustering (K-means)
 
----
+### Fine-Tuning
+- Base model: TinyLLaMA
+- Method: LoRA
 
-### Output Length
-
-![Output Alpaca](images/hist_out_len_alpaca.png)
-![Output Dolly](images/hist_out_len_dolly.png)
-![Output OASST1](images/hist_out_len_oasst1.png)
-
----
-
-### Vocabulary & Entropy
-
-![Vocab](images/vocab_size_v2.png)
-![Entropy](images/output_entropy_v2.png)
-
----
-
-## 🤖 Model Training
-
-### Model
-
-* **TinyLLaMA**
-
-### Technique
-
-* **LoRA (Low-Rank Adaptation)**
-
-### Why LoRA?
-
-* Efficient training
-* Lower memory usage
-* Faster experimentation
+### Evaluation
+- Instruction Following
+- Correctness
+- Clarity
+- Completeness
+- Constraint-following tests
 
 ---
 
-### Training Configuration
+## 📊 Results
 
-| Parameter     | Value |
-| ------------- | ----- |
-| Learning Rate | 2e-5  |
-| Batch Size    | 8     |
-| Epochs        | 3     |
-| Optimizer     | AdamW |
+### Structural Differences
+- Alpaca: structured, repetitive
+- Dolly: balanced, human-like
+- OpenAssistant: diverse, conversational
 
----
+### Model Performance
+- Alpaca: 3.01
+- Dolly: 3.61 (Best)
+- OpenAssistant: 3.32
 
-### Training Loss Curve
-
-![Loss](images/training_loss_plot.png)
-
-👉 Loss decreases steadily → stable convergence
-
----
-
-## 📊 Evaluation
-
-### Evaluation Types
-
-#### 1. Manual Evaluation
-
-Each response scored on:
-
-* Instruction Following
-* Correctness
-* Clarity
-* Completeness
-
-Scale: 1 (Poor) → 4 (Excellent)
+### Constraint Following
+- Alpaca: 70%
+- Dolly: 82%
+- OpenAssistant: 75%
 
 ---
 
-#### 2. Constraint Evaluation
+## 📂 Project Structure
 
-Tests:
-
-* Bullet points
-* Numbered lists
-* Length constraints
-* Structured format
-
----
-
-## 📌 Results
-
-### Manual Scores
-
-| Model  | Mean Score |
-| ------ | ---------- |
-| Alpaca | 3.01       |
-| Dolly  | 3.61       |
-| OASST1 | 3.32       |
-
-👉 Dolly performs best overall
-
----
-
-### Key Observations
-
-* **Alpaca**
-
-  * Concise
-  * Less detailed
-  * Template-like
-
-* **Dolly**
-
-  * Structured
-  * Balanced
-  * Best performance
-
-* **OASST1**
-
-  * Long responses
-  * More conversational
-  * Less consistent
-
----
-
-## 📊 Additional Analysis
-
-### Response Length by Category
-
-![Length](images/category_response_length_v2.png)
-
-### Entropy by Category
-
-![Entropy](images/category_entropy_v2.png)
-
-### Manual Score Heatmap
-
-![Heatmap](images/category_manual_score_heatmap_v2.png)
-
----
-
-## 🔍 Key Insights
-
-* Dataset structure directly influences model outputs
-* Human-authored data → best generalization
-* Synthetic data → efficient but repetitive
-* Conversational data → diverse but noisy
-
----
-
-## 📁 Project Structure
-
-```
-project/
-│
-├── data/
-├── analysis/
+src/
+├── preprocessing/
 ├── finetuning/
-├── images/
-├── results/
-└── README.md
-```
+├── evaluation/
+├── analysis/
+
+results/
+├── main_figures/
+├── appendix_figures/
+
+outputs/
+├── figures/
+├── metrics/
+├── logs/
+
+paper/
+├── Dataset_Structure_Matters.pdf
 
 ---
 
-## 🚀 How to Run
+## ⚙️ How to Run
 
-```bash
-pip install -r requirements.txt
-```
+pip install -r requirements.txt  
+python run_pipeline.py  
 
-```bash
-python analysis/structural_metrics.py
-```
+Extended:
+python run_extended.py  
 
-```bash
-python finetuning/train_model.py
-```
+---
 
-```bash
-python finetuning/evaluate_model.py
-```
+## 📄 Paper
 
-```bash
-python finetuning/plot_training_loss.py
-```
+See paper/ folder.
 
 ---
 
 ## ⚠️ Limitations
 
-* Only 3 datasets analyzed
-* Small model (TinyLLaMA)
-* Manual evaluation subjectivity
-
----
-
-## 🔮 Future Work
-
-* Larger models (LLaMA, Mistral)
-* More datasets (FLAN, Self-Instruct)
-* Automated evaluation
-* Advanced semantic analysis
-
----
-
-## 📌 Conclusion
-
-This project demonstrates that **dataset structure is a critical factor in instruction fine-tuning**. Beyond model architecture, the composition and design of datasets significantly influence how models learn and respond.
-
-Adopting a **data-centric approach** can lead to better model performance, improved alignment, and more reliable outputs.
+- Manual evaluation is subjective
+- Limited constraints
+- Small base model
 
 ---
 
 ## ⭐ Acknowledgment
 
-Developed as part of
-**Machine Learning for Natural Language Understanding**
-
----
-
-## 📄 License
-
-For academic and research purposes.
+Machine Learning for Natural Language Understanding  
+Universität Trier  
