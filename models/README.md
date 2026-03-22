@@ -20,9 +20,8 @@ Due to the **large size of the trained models**, they are not fully hosted in th
 
 👉 The complete models are available at the following link:  
 
-🔗 **[MODEL_LINK_HERE]**  
+🔗 **Google drive link ** :   
 
-* Google Drive link :
 
 ---
 
