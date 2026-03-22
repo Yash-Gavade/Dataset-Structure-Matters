@@ -5,11 +5,7 @@
 ## 📖 Title
 **Dataset Structure Matters: A Dataset-Centric Structural Analysis and Empirical Study of Instruction-Tuning Corpora**
 
-## 👤 Author
-**Yash Gavade**  
-M.Sc. Natural Language Processing  
-Universität Trier  
- 
+
 ##  Abstract
 
 This study analyzes how instruction dataset structure affects model behavior. Using Alpaca, Dolly, and OpenAssistant, structural properties are examined and TinyLLaMA models are fine-tuned with LoRA. Results show that dataset design significantly impacts performance, with human-generated data producing better outputs.
@@ -134,6 +130,14 @@ See paper/ folder.
 - Small base model
 
 ---
+## 👤 Author
+**Yash Gavade**  
+M.Sc. Natural Language Processing  
+Universität Trier  
+ 
+### 👨‍🏫 Supervisors  
+- **Prof. Dr. Achim Rettinger**  
+- **Raghvi Baloni (PhD Candidate)** 
 
 ## ⭐ Acknowledgment
 
