@@ -1,23 +1,15 @@
 # 📊 Dataset Structure Matters
 
-> 🎓 Term Paper – Machine Learning for Natural Language Understanding  
+> 🎓 Term Paper – Machine Learning for Natural Language Understanding  (W S 2025/2026)
 
 ## 📖 Title
 **Dataset Structure Matters: A Dataset-Centric Structural Analysis and Empirical Study of Instruction-Tuning Corpora**
-
 
 ## 👤 Author
 **Yash Gavade**  
 M.Sc. Natural Language Processing  
 Universität Trier  
-📧 s4yagava@uni-trier.de  
-
-
-### 👨‍🏫 Supervisors  
-- **Prof. Dr. Achim Rettinger**  
-- **Raghvi Baloni (PhD Candidate)**  
-
----
+ 
 ##  Abstract
 
 This study analyzes how instruction dataset structure affects model behavior. Using Alpaca, Dolly, and OpenAssistant, structural properties are examined and TinyLLaMA models are fine-tuned with LoRA. Results show that dataset design significantly impacts performance, with human-generated data producing better outputs.
