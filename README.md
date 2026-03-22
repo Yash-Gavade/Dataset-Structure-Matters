@@ -105,8 +105,7 @@ The results highlight that **dataset structure plays a crucial role in model beh
 
 - **Dolly (human-generated)** achieves the best performance across both manual evaluation and constraint-following tasks, indicating that human-authored data provides richer linguistic variability and better structural guidance.  
 - **Alpaca (synthetic)** produces more consistent but often shallow outputs, reflecting its template-based generation process.  
-- **OpenAssistant (conversational)** shows higher diversity and longer responses, but lacks structural consistency, leading to moderate performance.  
-
+- **OpenAssistant (conversational)** shows higher diversity and longer responses, but lacks structural consistency, leading to moderate performance.
 Overall, the findings suggest that **dataset construction methodology directly influences model quality, generalization, and formatting ability**, reinforcing the importance of a dataset-centric approach in instruction tuning.
 ---
 
