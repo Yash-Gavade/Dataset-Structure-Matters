@@ -1,0 +1,4 @@
+dataset,field,n,n_duplicate_rows,duplicate_rate
+alpaca,instruction,10000,0,0.0
+dolly,instruction,10000,119,0.0119
+oasst1,instruction,9057,109,0.012034890140223032

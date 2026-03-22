@@ -1,0 +1,4 @@
+dataset,field,n,n_duplicate_rows,duplicate_rate
+alpaca,output,10000,136,0.0136
+dolly,output,10000,45,0.0045
+oasst1,output,9057,65,0.007176769349674285

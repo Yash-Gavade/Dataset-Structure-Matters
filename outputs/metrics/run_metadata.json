@@ -1,0 +1,25 @@
+{
+  "timestamp_utc": "2026-03-15T07:39:51.291850",
+  "args": {
+    "n_target": 10000,
+    "seed": 42,
+    "language": "en",
+    "out_dir": "outputs_extended",
+    "k_values": [
+      50,
+      75,
+      100
+    ],
+    "max_features": 50000,
+    "min_df": 2,
+    "ngram_topk": 50,
+    "bootstrap_n": 1000
+  },
+  "n_loaded": 76042,
+  "n_after_size_match": 29057,
+  "n_by_dataset": {
+    "alpaca": 10000,
+    "dolly": 10000,
+    "oasst1": 9057
+  }
+}

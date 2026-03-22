@@ -1,0 +1,4 @@
+dataset,top_k,n_words,template_concentration
+alpaca,20,3,0.1431
+dolly,20,3,0.3343
+oasst1,20,3,0.17665893783813624
