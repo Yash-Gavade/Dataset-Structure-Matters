@@ -1,40 +1,20 @@
-# 📊 Dataset Structure Matters  
+# 📊 Dataset Structure Matters
 
-### A Dataset-Centric Structural Analysis and Empirical Study of Instruction-Fine-Tuning Corpora  
-
----
-
-### 🎓 Universität Trier  
-**Computational Linguistics and Digital Humanities**  
-Department II  
+> 🎓 Academic Project – Universität Trier  
+> 📌 Machine Learning for Natural Language Understanding  
 
 ---
 
-### 📘 Term Paper  
-**Machine Learning for Natural Language Understanding**  
+## 📖 Title
+**Dataset Structure Matters: A Dataset-Centric Structural Analysis and Empirical Study of Instruction-Tuning Corpora**
 
 ---
 
-### 👤 Author  
+## 👤 Author
 **Yash Gavade**  
-Matr.-Nr.: 1757209  
+M.Sc. Natural Language Processing  
+Universität Trier  
 📧 s4yagava@uni-trier.de  
-
----
-
-### 🎓 Degree  
-Master of Science  
-Natural Language Processing  
-
----
-
-### 📅 Semester  
-Winter Semester 2025/2026  
-
----
-
-### 📌 Submission Date  
-March 23, 2026  
 
 ---
 
